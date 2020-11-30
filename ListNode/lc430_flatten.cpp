@@ -7,7 +7,6 @@ https://leetcode-cn.com/problems/flatten-a-multilevel-doubly-linked-list/
 
 给你位于列表第一级的头节点，请你扁平化列表，使所有结点出现在单级双链表中。
 
- 
 
 示例 1：
 

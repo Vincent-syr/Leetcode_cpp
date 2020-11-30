@@ -3,6 +3,37 @@
 using namespace std;
 
 
+/* 
+https://leetcode-cn.com/problems/flatten-binary-tree-to-linked-list/?utm_source=LCUS&utm_medium=ip_redirect&utm_campaign=transfer2china
+114. 二叉树展开为链表  middle
+给定一个二叉树，原地将它展开为一个单链表。即按照前序遍历顺序
+ 
+
+例如，给定二叉树
+
+    1
+   / \
+  2   5
+ / \   \
+3   4   6
+将其展开为：
+
+1
+ \
+  2
+   \
+    3
+     \
+      4
+       \
+        5
+         \
+          6
+
+解法：
+
+ */
+
 struct TreeNode{
     int val;
     TreeNode* left;
@@ -22,6 +53,14 @@ struct TreeNode{
         }
         root->right = right;
         flatten(right);
+
+        return;
+    }
+
+        // 前序遍历，递归方法
+        void flatten_rec(TreeNode* root) {
+
+
 
         return;
     }
