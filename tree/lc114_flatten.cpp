@@ -32,6 +32,8 @@ https://leetcode-cn.com/problems/flatten-binary-tree-to-linked-list/?utm_source=
 
 解法：
 
+从底向上递归，首先看左边的尾部234，把它拉平，再自下而上；
+
  */
 
 struct TreeNode{
@@ -53,14 +55,8 @@ struct TreeNode{
         }
         root->right = right;
         flatten(right);
-
         return;
     }
 
-        // 前序遍历，递归方法
-        void flatten_rec(TreeNode* root) {
+        
 
-
-
-        return;
-    }

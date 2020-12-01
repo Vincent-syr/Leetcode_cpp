@@ -65,3 +65,8 @@ using namespace std;
         return res;
 
     }
+
+
+    /* 摩尔遍历算法，空间复杂度O(1), 时间复杂度O(N) */
+    
+

@@ -20,8 +20,10 @@ void fn (B x) {}  // 当我们希望x只能是B类型时，我们就需要禁止
 
 int main(int argc, char const *argv[])
 {
-    A foo;
-    B bar = foo;    // 调用构造函数实现隐式类型转换
+  int a = INT_MAX;
+  cout << a;
+
+  
 
     
 
