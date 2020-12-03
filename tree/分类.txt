@@ -1,0 +1,25 @@
+完全二叉树性质：
+    lc222_countLevel.cpp
+
+
+判断两颗树是否相同：
+    lc572_isSubtree：中的函数isSameTree
+
+
+
+
+
+二叉搜索树BST：
+    框架即前序遍历：
+        void BST(TreeNode root, int target) {
+            if (root.val == target)
+                // 找到目标，做点什么
+            if (root.val < target) 
+                BST(root.right, target);
+            if (root.val > target)
+                BST(root.left, target);
+        }
+    题目：
+        lc450_deleteNode(*有debug), lc701_insertIntoBST, 
+        lc99_recoverTree(回复BST，hard)
+        

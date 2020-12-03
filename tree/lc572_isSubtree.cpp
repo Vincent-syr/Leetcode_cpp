@@ -1,3 +1,9 @@
+/*
+ * @Author: Vincent-syr
+ * @Date: 2020-12-01 21:00:55
+ * @LastEditTime: 2020-12-03 15:57:58
+ * @Description: file content
+ */
 #include <iostream>
 #include <vector>
 #include <stack>
@@ -42,31 +48,31 @@ https://leetcode-cn.com/problems/subtree-of-another-tree/
 返回 false。
 
 解法：
-    isSubtree和isSameNode两个函数本质都是基于递归的前序遍历；
+    isSubtree和isSameTree两个函数本质都是基于递归的前序遍历；
 
 debug点：
-    isSameNode和isSubtree的函数调用出现了错误，名字相似，低级错误；
+    isSameTree和isSubtree的函数调用出现了错误，名字相似，低级错误；
 
 
  */
-    bool isSameNode(TreeNode* s, TreeNode* t);
+    bool isSameTree(TreeNode* s, TreeNode* t);
 
     bool isSubtree(TreeNode* s, TreeNode* t) {
         // preorder
         if(s == nullptr)  return false;
 
-        if(isSameNode(s, t))    return true;
+        if(isSameTree(s, t))    return true;
         if(isSubtree(s->left, t))    return true;
         if(isSubtree(s->right, t)) return true;
         return false;
     }
 
 
-    bool isSameNode(TreeNode* s, TreeNode* t){
+    bool isSameTree(TreeNode* s, TreeNode* t){
         if(s==nullptr && t==nullptr)    return true;
         else if(s==nullptr || t==nullptr)   return false;  // 一个空指针，一个不是
         // 都非空指针
-        bool flag = (s->val == t->val) && isSameNode(s->left, t->left) && isSameNode(s->right, t->right);
+        bool flag = (s->val == t->val) && isSameTree(s->left, t->left) && isSameTree(s->right, t->right);
         return flag;
     }
 
