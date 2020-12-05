@@ -1,3 +1,9 @@
+/*
+ * @Author: Vincent-syr
+ * @Date: 2020-10-24 12:35:40
+ * @LastEditTime: 2020-12-05 17:57:10
+ * @Description: file content
+ */
 #include <iostream>
 using namespace std;
 
@@ -20,9 +26,8 @@ void fn (B x) {}  // 当我们希望x只能是B类型时，我们就需要禁止
 
 int main(int argc, char const *argv[])
 {
-  int a = INT_MAX;
-  cout << a;
-
+  int *a = 0;
+  cout<< *a<<endl;
   
 
     
