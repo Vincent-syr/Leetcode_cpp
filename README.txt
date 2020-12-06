@@ -1,4 +1,4 @@
-## stack
+1## stack
     单调栈：
     「单调栈」monotonic stack，解决了一类问题「Next Greater Number]
         lc496 下一个更大元素 I
@@ -10,6 +10,18 @@
         lc581 findUnsortedSubarray，
             子数组和排序问题，可以使用单调栈空间O(N)；
             也可以不用单调栈，仅仅用O(1)的空间复杂度解决；
+
+## ListNode
+经典题目：
+    lc206 反转链表 
+        https://leetcode-cn.com/problems/fan-zhuan-lian-biao-lcof/solution/fan-zhuan-lian-biao-yi-dong-de-shuang-zhi-zhen-jia/
+        naive双指针法   空间O(1)
+        妖魔化双指针法
+
+        递归法： 空间O(n)
+        栈：空间O(n)，和递归法本质一样；
+    
+
 
 ## tree
     完全二叉树性质：
