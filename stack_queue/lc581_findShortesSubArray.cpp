@@ -7,7 +7,7 @@ using namespace std;
 /*
  * @Author: Vincent-syr
  * @Date: 2020-12-04 22:39:16
- * @LastEditTime: 2020-12-05 00:09:45
+ * @LastEditTime: 2020-12-07 11:32:07
  * @Description: file content
 https://leetcode-cn.com/problems/shortest-unsorted-continuous-subarray/
 581. 最短无序连续子数组   middle
@@ -30,7 +30,7 @@ https://leetcode-cn.com/problems/shortest-unsorted-continuous-subarray/
     方法2：单纯比较即可，时间O(n),空间O(1)
 debug点：
     求完左边界lo后求hi边界前时，需要将stk请空；
-    应该是先 lo = min(lo, stk.top), 再stk.pop；否则对空栈执行stk.top()， 此处耗时很长；
+    应该是先 lo = min(lo, stk.top), 再stk.pop；否则对空栈执行stk.top()， 此处debug耗时很长；
     
  */
 

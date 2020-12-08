@@ -7,7 +7,7 @@ using namespace std;
 /*
  * @Author: Vincent-syr
  * @Date: 2020-12-06 20:08:22
- * @LastEditTime: 2020-12-06 21:07:04
+ * @LastEditTime: 2020-12-07 11:09:49
  * @Description: file content
 https://leetcode-cn.com/problems/reverse-linked-list/
 206. 反转链表   easy
@@ -88,9 +88,9 @@ debug点：
         vector<int> nums = {1,2,3,4,5};
         ListNode* head = createList(nums);
 
-        auto res = reverseListRec(head);
+        // auto res = reverseListRec(head);
 
-        outputList(res);
+        outputList(head);
 
 
         return 0;

@@ -1,12 +1,12 @@
 /*
  * @Author: Vincent-syr
  * @Date: 2020-11-19 16:45:31
- * @LastEditTime: 2020-12-06 20:38:31
+ * @LastEditTime: 2020-12-07 11:12:40
  * @Description: file content
  */
 #include <iostream>
 #include <vector>
-using namespace std;
+using std::vector;
 
 class ListNode {
 public:
@@ -33,9 +33,9 @@ ListNode* createList(vector<int> &nums){
 void outputList(ListNode* head){
   auto cur = head;
   while(cur){
-    cout<< cur->val;
-    if(cur->next)   cout<<" -> ";
+    std::cout<< cur->val;
+    if(cur->next)   std::cout<<" -> ";
     cur = cur->next;
   }
-  cout<<endl;
+  std::cout<<std::endl;
 }

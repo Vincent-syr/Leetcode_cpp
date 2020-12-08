@@ -1,3 +1,9 @@
+/*
+ * @Author: Vincent-syr
+ * @Date: 2020-11-21 16:58:23
+ * @LastEditTime: 2020-12-08 10:43:31
+ * @Description: file content
+ */
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -7,8 +13,6 @@ https://leetcode-cn.com/problems/majority-element-ii/
 给定一个大小为 n 的整数数组，找出其中所有出现超过 ⌊ n/3 ⌋ 次的元素。
 
 进阶：尝试设计时间复杂度为 O(n)、空间复杂度为 O(1)的算法解决此问题。
-
- 
 
 示例 1：
 
