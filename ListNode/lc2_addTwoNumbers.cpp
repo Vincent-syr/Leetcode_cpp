@@ -1,10 +1,16 @@
+/*
+ * @Author: Vincent-syr
+ * @Date: 2020-11-20 21:30:31
+ * @LastEditTime: 2020-12-09 10:25:49
+ * @Description: file content
+ */
 #include <iostream>
 #include "ListNode.h"
 using namespace std;
 
 /* 
 https://leetcode-cn.com/problems/add-two-numbers/
-2. 两数相加
+2. 两数相加 middle
 给出两个 非空 的链表用来表示两个非负的整数。其中，它们各自的位数是按照 逆序 的方式存储的，并且它们的每个节点只能存储 一位 数字。
 
 如果，我们将这两个数相加起来，则会返回一个新的链表来表示它们的和。
@@ -17,12 +23,24 @@ https://leetcode-cn.com/problems/add-two-numbers/
 输出：7 -> 0 -> 8
 原因：342 + 465 = 807
 
-关键字：位运算
+
+
+
+
+
+
+
+
+关键字：加法器
 
 解答：
     1） 注意低位的进位，用类似数电加法器的carr保存进位；
     2） 最高位如果有进位，则新链表会比原链表多1位；
 
+
+情况考虑：
+    两链表长度不等怎么办？
+    空链表？
  */
 
 
