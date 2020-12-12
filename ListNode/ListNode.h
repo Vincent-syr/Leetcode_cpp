@@ -1,12 +1,11 @@
 /*
  * @Author: Vincent-syr
  * @Date: 2020-11-19 16:45:31
- * @LastEditTime: 2020-12-07 11:12:40
+ * @LastEditTime: 2020-12-11 17:47:54
  * @Description: file content
  */
 #include <iostream>
 #include <vector>
-using std::vector;
 
 class ListNode {
 public:
@@ -19,7 +18,7 @@ public:
 };
 
 
-ListNode* createList(vector<int> &nums){
+ListNode* createList(std::vector<int> &nums){
   ListNode* head = new ListNode(0);   // dumb node
   auto cur = head;
   for(int num: nums){
@@ -39,3 +38,6 @@ void outputList(ListNode* head){
   }
   std::cout<<std::endl;
 }
+
+
+
