@@ -1,14 +1,48 @@
+/*
+ * @Author: Vincent-syr
+ * @Date: 2020-11-23 14:59:03
+ * @LastEditTime: 2020-12-16 21:00:26
+ * @Description: file content
+https://leetcode-cn.com/problems/permutations-ii/
+ 47. 全排列 II  middle
+给定一个可包含重复数字的序列 nums ，按任意顺序 返回所有不重复的全排列。
+
+ 
+
+示例 1：
+
+输入：nums = [1,1,2]
+输出：
+[[1,1,2],
+ [1,2,1],
+ [2,1,1]]
+示例 2：
+
+输入：nums = [1,2,3]
+输出：[[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]]
+ 
+
+提示：
+
+1 <= nums.length <= 8
+-10 <= nums[i] <= 10
+ 
+ 
+ */
 #include <iostream>
 #include <vector>
 using namespace std;
 
 
-void printVec(vector<int>& nums){
-    for(auto &arr: nums){
-        cout<< arr<<" ";
+
+
+
+    void printVec(vector<int>& nums){
+        for(auto &arr: nums){
+            cout<< arr<<" ";
+        }
+        cout<<endl;
     }
-    cout<<endl;
-}
 
 
     void backtracking (vector<int>& nums, vector<int>& path, 

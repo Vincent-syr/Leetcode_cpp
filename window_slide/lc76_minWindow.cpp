@@ -1,3 +1,9 @@
+/*
+ * @Author: Vincent-syr
+ * @Date: 2020-11-26 21:07:47
+ * @LastEditTime: 2020-12-16 20:45:37
+ * @Description: file content
+ */
 #include <iostream>
 #include <vector>
 #include<unordered_map>
@@ -6,7 +12,7 @@ using namespace std;
 
 /*
 https://leetcode-cn.com/problems/minimum-window-substring/
- 76. 最小覆盖子串
+ 76. 最小覆盖子串   middle
 给你一个字符串 s 、一个字符串 t 。返回 s 中涵盖 t 所有字符的最小子串。如果 s 中不存在涵盖 t 所有字符的子串，则返回空字符串 "" 。
 
 注意：如果 s 中存在这样的子串，我们保证它是唯一的答案。
